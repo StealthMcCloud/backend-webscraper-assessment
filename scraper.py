@@ -24,7 +24,7 @@ def print_phone_numbers(numbers):
 
 
 def print_relative_urls(rel_urls):
-    """Prints A and IMG tags' href and src urls from beautiful soup parser."""
+    """Prints anchor(A) and image(IMG) tags' href and src urls from beautiful soup parser."""
     print('\nIMG and A tag URLS')
     print('\n'.join(set(rel_urls)))
 
@@ -129,7 +129,6 @@ def scraper_html_parser():
 def scraper(url):
     """Does GET request at URL and returns content of server response."""
     r = requests.get(url)
-    # print(r.encoding)print(r.json())print(r.text)
     return r.content
 
 
